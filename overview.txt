@@ -1,0 +1,20 @@
+Overview
+
+Embergrove Games Cafe needs a short, playable browser game for its website to
+entertain guests while they wait for a table. The game is a single screen tower
+defense built with HTML, CSS, and JavaScript on the HTML5 Canvas. It must run
+with no installation, opening directly from one index.html file with no server
+and no build step.
+
+In a tower defense game, enemies travel along a fixed path from an entry point to
+an exit. The player stops them by placing defensive turrets on the buildable
+tiles beside the path. Each enemy that reaches the exit costs one life. Each enemy
+destroyed pays gold, which the player spends to place more turrets or to upgrade
+the ones already placed. The game runs for a fixed set of enemy waves that grow
+harder over time. The player wins by clearing all waves with at least one life
+left and loses if lives reach zero.
+
+This is a complete, self contained game task. The work covers the playable game,
+its art drawn in code or from simple bundled image files, and a short readme. No
+backend server, no online multiplayer, no account system, and no payment are part
+of this task. The game must run offline from local files in any modern browser.

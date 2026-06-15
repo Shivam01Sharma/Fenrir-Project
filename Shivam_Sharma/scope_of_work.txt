@@ -1,0 +1,41 @@
+Scope of Work
+
+Build a tower defense game that runs entirely in the browser from a single root
+folder named Embergrove_Tower_Defense, with an entry file named index.html that
+loads the game with no build step and no server. Render the game on an HTML5
+Canvas sized 960 by 640 pixels, laid out as a grid of 40 by 40 pixel tiles, giving
+a 24 by 16 tile field. Draw one fixed enemy path from a left edge entry tile to a
+right edge exit tile that bends at least three times. Path tiles are non buildable;
+all other tiles are buildable.
+
+Implement exactly eight enemy waves. Each wave spawns a defined number of enemies
+that follow the path at a set speed, and later waves contain more enemies and at
+least one faster or tougher enemy type than the first wave. Every enemy has a
+health value and a movement speed and shows a small health bar above it. When an
+enemy reaches the exit, reduce player lives by one. Start the player with 20 lives
+and display the current lives at all times.
+
+Implement an economy. Start the player with 100 gold and display current gold.
+Destroying an enemy awards gold equal to a per enemy bounty. The player places a
+turret only on a buildable tile by clicking it, and only with enough gold, which
+is deducted on placement. Provide at least two turret types that differ in cost,
+range, fire rate, and damage, for example a cheap rapid fire turret and an
+expensive heavy turret. Each turret automatically targets the nearest enemy in
+range, fires at a fixed rate, and reduces enemy health by its damage. The player
+can upgrade a placed turret by selecting it and paying an upgrade cost, which
+raises its damage or range by a defined amount for at least one upgrade level.
+
+Implement game flow and states: a start state with a clear Start button, a playing
+state, a win state when all eight waves are cleared with at least one life left,
+and a lose state when lives reach zero. On win or lose, show a clear end message
+and offer a way to restart without reloading the page. Show the current wave number
+out of eight during play.
+
+Deliver the playable game in the root folder Embergrove_Tower_Defense containing at
+least index.html, a styles file, one or more JavaScript files holding the game
+logic, an assets subfolder for any images, and a README.md that states how to run
+the game by opening index.html and lists the controls. Use the fixed color palette:
+background hex 1A1208, path tiles hex 6B4A2B, buildable grass tiles hex 2E4A24, and
+a primary accent for UI and turret fire hex FF7A1A. Do not include a backend server,
+a database, online multiplayer, user accounts, payment, or any external paid
+service. The game must run offline from local files.
